@@ -4,7 +4,7 @@ version = "0.1.0"
 description = ""
 authors = ["Your Name <you@example.com>"]
 packages = [
-    { include = "package1" }
+    { include = "package1", from = "src" }
 ]
 
 [tool.poetry.dependencies]
@@ -14,3 +14,6 @@ python = "^3.9"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+poetry = "package1.main:greet"
