@@ -16,4 +16,4 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
-poetry = "package2.main:greet"
+package2_greet = "package2.main:greet"
